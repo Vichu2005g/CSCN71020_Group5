@@ -4,6 +4,7 @@
 
 #include "main.h"
 #include "triangleSolver.h"
+#include "rectangleSolver.h"
 
 int side = 0;
 
@@ -16,7 +17,24 @@ int main() {
 
 		switch (shapeChoice)
 		{
+		case 2:
+		{
+			printf_s("Rectangle selected.\n");
+			struct Point rectanglePoints[4] = {
+				{0,0},
+				{0,0},
+				{0,0},
+				{0,0}
+			};
+			readRectangle(&rectanglePoints);
+			if (verifyRectangle(&rectanglePoints) == false)
+				printf_s("invalid rectangle points");
+			else
+				rectangleCalculator(&rectanglePoints);
+			break;
+		}
 		case 1:
+		{
 			printf_s("Triangle selected.\n");
 			int triangleSides[3] = { 0, 0, 0 };
 			int* triangleSidesPtr = getTriangleSides(triangleSides);
@@ -24,6 +42,7 @@ int main() {
 			char* result = analyzeTriangle(triangleSidesPtr[0], triangleSidesPtr[1], triangleSidesPtr[2]);
 			printf_s("%s\n", result);
 			break;
+		}
 		case 0:
 			continueProgram = false;
 			break;
@@ -44,6 +63,7 @@ void printWelcome() {
 }
 
 int printShapeMenu() {
+	printf_s("2. Rectangle\n");
 	printf_s("1. Triangle\n");
 	printf_s("0. Exit\n");
 
@@ -54,6 +74,7 @@ int printShapeMenu() {
 
 	return shapeChoice;
 }
+
 
 int* getTriangleSides(int* triangleSides) {
 	printf_s("Enter the three sides of the triangle: ");
