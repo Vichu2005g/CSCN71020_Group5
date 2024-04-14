@@ -49,7 +49,7 @@ namespace unittesting
 			char* expected = "Not a triangle";
 			Assert::AreEqual(expected, actual);
 
-		// Unit testing for Rectangle Analyzer 
+		// Unit testing for Triangle inside angle
 
 		}
 	};
