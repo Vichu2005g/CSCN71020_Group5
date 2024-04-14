@@ -11,7 +11,8 @@ namespace unittesting
 	TEST_CLASS(unittesting)
 	{
 	public:
-		
+		// Unit testing for Triangle Analyzer 
+
 		TEST_METHOD(TestAnalyzeTriangle1)
 		{
 			char* actual = analyzeTriangle(0, 0, 0);
@@ -47,6 +48,9 @@ namespace unittesting
 			char* actual = analyzeTriangle(-3, 5, 7);
 			char* expected = "Not a triangle";
 			Assert::AreEqual(expected, actual);
+
+		// Unit testing for Rectangle Analyzer 
+
 		}
 	};
 }
