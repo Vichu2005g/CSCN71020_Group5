@@ -55,36 +55,42 @@ namespace unittesting
 		TEST_METHOD(TriangleInsideAngle1) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
+			getAngles(0, 0, 0, angles);
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle2) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
+			getAngles(0, 0, 0, angles);
 			
 		}
 
 		TEST_METHOD(TriangleInsideAngle3) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
+			getAngles(0, 0, 0, angles);
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle4) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
+			getAngles(0, 0, 0, angles);
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle5) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
+			getAngles(0, 0, 0, angles);
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle6) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
+			getAngles(0, 0, 0, angles);
 
 		}
 	};
