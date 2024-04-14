@@ -57,12 +57,30 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			for (int i = 0; i < 3; i++) {
+				if (i == 1)
+					angle_1 = angles[i];
+				if (i == 2)
+					angle_2 = angles[i];
+				if (i == 3)
+					angle_3 = angles[i];
+			}
+
 		}
 
 		TEST_METHOD(TriangleInsideAngle2) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
+
+			for (int i = 0; i < 3; i++) {
+				if (i == 1)
+					angle_1 = angles[i];
+				if (i == 2)
+					angle_2 = angles[i];
+				if (i == 3)
+					angle_3 = angles[i];
+			}
 			
 		}
 
@@ -71,12 +89,30 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			for (int i = 0; i < 3; i++) {
+				if (i == 1)
+					angle_1 = angles[i];
+				if (i == 2)
+					angle_2 = angles[i];
+				if (i == 3)
+					angle_3 = angles[i];
+			}
+
 		}
 
 		TEST_METHOD(TriangleInsideAngle4) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
+
+			for (int i = 0; i < 3; i++) {
+				if (i == 1)
+					angle_1 = angles[i];
+				if (i == 2)
+					angle_2 = angles[i];
+				if (i == 3)
+					angle_3 = angles[i];
+			}
 
 		}
 
@@ -85,12 +121,30 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			for (int i = 0; i < 3; i++) {
+				if (i == 1)
+					angle_1 = angles[i];
+				if (i == 2)
+					angle_2 = angles[i];
+				if (i == 3)
+					angle_3 = angles[i];
+			}
+
 		}
 
 		TEST_METHOD(TriangleInsideAngle6) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
+
+			for (int i = 0; i < 3; i++) {
+				if (i == 1)
+					angle_1 = angles[i];
+				if (i == 2)
+					angle_2 = angles[i];
+				if (i == 3)
+					angle_3 = angles[i];
+			}
 
 		}
 	};
