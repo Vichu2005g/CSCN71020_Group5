@@ -18,7 +18,7 @@ int main() {
 		switch (shapeChoice)
 		{
 
-		case 1:
+		case '1':
 		{
 			printf_s("Triangle selected.\n");
 			int triangleSides[3] = { 0, 0, 0 };
@@ -29,7 +29,7 @@ int main() {
 			break;
 		}
 
-		case 2:
+		case '2':
 		{
 			printf_s("Rectangle selected.\n");
 			struct Point rectanglePoints[4] = {
@@ -46,7 +46,7 @@ int main() {
 			break;
 		}
 
-		case 0:
+		case '0':
 			continueProgram = false;
 			break;
 		default:
@@ -70,10 +70,10 @@ int printShapeMenu() {
 	printf_s("2. Rectangle\n");
 	printf_s("0. Exit\n");
 
-	int shapeChoice;
+	char shapeChoice;
 
 	printf_s("Enter number: ");
-	scanf_s("%1o", &shapeChoice);
+	scanf_s("%c", &shapeChoice);
 
 	return shapeChoice;
 }
