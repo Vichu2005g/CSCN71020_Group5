@@ -53,97 +53,122 @@ namespace unittesting
 		// Unit testing for Triangle inside angle
 
 		TEST_METHOD(TriangleInsideAngle1) {
-			float angle_1, angle_2, angle_3;
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			float Expected_angle_1 = 0;
+			float Expected_angle_2 = 0;
+			float Expected_angle_3 = 0;
+
 			for (int i = 0; i < 3; i++) {
 				if (i == 1)
-					angle_1 = angles[i];
+					Actual_angle_1 = angles[i];
 				if (i == 2)
-					angle_2 = angles[i];
+					Actual_angle_2 = angles[i];
 				if (i == 3)
-					angle_3 = angles[i];
+					Actual_angle_3 = angles[i];
 			}
+			
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle2) {
-			float angle_1, angle_2, angle_3;
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			float Expected_angle_1 = 0;
+			float Expected_angle_2 = 0;
+			float Expected_angle_3 = 0;
+
 			for (int i = 0; i < 3; i++) {
 				if (i == 1)
-					angle_1 = angles[i];
+					Actual_angle_1 = angles[i];
 				if (i == 2)
-					angle_2 = angles[i];
+					Actual_angle_2 = angles[i];
 				if (i == 3)
-					angle_3 = angles[i];
+					Actual_angle_3 = angles[i];
 			}
 			
 		}
 
 		TEST_METHOD(TriangleInsideAngle3) {
-			float angle_1, angle_2, angle_3;
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			float Expected_angle_1 = 0;
+			float Expected_angle_2 = 0;
+			float Expected_angle_3 = 0;
+
 			for (int i = 0; i < 3; i++) {
 				if (i == 1)
-					angle_1 = angles[i];
+					Actual_angle_1 = angles[i];
 				if (i == 2)
-					angle_2 = angles[i];
+					Actual_angle_2 = angles[i];
 				if (i == 3)
-					angle_3 = angles[i];
+					Actual_angle_3 = angles[i];
 			}
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle4) {
-			float angle_1, angle_2, angle_3;
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			float Expected_angle_1 = 0;
+			float Expected_angle_2 = 0;
+			float Expected_angle_3 = 0;
+
 			for (int i = 0; i < 3; i++) {
 				if (i == 1)
-					angle_1 = angles[i];
+					Actual_angle_1 = angles[i];
 				if (i == 2)
-					angle_2 = angles[i];
+					Actual_angle_2 = angles[i];
 				if (i == 3)
-					angle_3 = angles[i];
+					Actual_angle_3 = angles[i];
 			}
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle5) {
-			float angle_1, angle_2, angle_3;
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			float Expected_angle_1 = 0;
+			float Expected_angle_2 = 0;
+			float Expected_angle_3 = 0;
+
 			for (int i = 0; i < 3; i++) {
 				if (i == 1)
-					angle_1 = angles[i];
+					Actual_angle_1 = angles[i];
 				if (i == 2)
-					angle_2 = angles[i];
+					Actual_angle_2 = angles[i];
 				if (i == 3)
-					angle_3 = angles[i];
+					Actual_angle_3 = angles[i];
 			}
 
 		}
 
 		TEST_METHOD(TriangleInsideAngle6) {
-			float angle_1, angle_2, angle_3;
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
+			float Expected_angle_1 = 0;
+			float Expected_angle_2 = 0;
+			float Expected_angle_3 = 0;
+
 			for (int i = 0; i < 3; i++) {
 				if (i == 1)
-					angle_1 = angles[i];
+					Actual_angle_1 = angles[i];
 				if (i == 2)
-					angle_2 = angles[i];
+					Actual_angle_2 = angles[i];
 				if (i == 3)
-					angle_3 = angles[i];
+					Actual_angle_3 = angles[i];
 			}
 
 		}
