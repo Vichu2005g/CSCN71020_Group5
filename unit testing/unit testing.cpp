@@ -57,22 +57,17 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
-			float Expected_angle_1 = 0;
-			float Expected_angle_2 = 0;
-			float Expected_angle_3 = 0;
+			const float Expected_angle_1 = 60;
+			const float Expected_angle_2 = 60;
+			const float Expected_angle_3 = 60;
 
-			for (int i = 0; i < 3; i++) {
-				if (i == 1)
-					Actual_angle_1 = angles[i];
-				if (i == 2)
-					Actual_angle_2 = angles[i];
-				if (i == 3)
-					Actual_angle_3 = angles[i];
-			}
+			Actual_angle_1 = angles[0], 
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
 			
 			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
 		}
 
@@ -81,22 +76,17 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
-			float Expected_angle_1 = 0;
-			float Expected_angle_2 = 0;
-			float Expected_angle_3 = 0;
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
 
-			for (int i = 0; i < 3; i++) {
-				if (i == 1)
-					Actual_angle_1 = angles[i];
-				if (i == 2)
-					Actual_angle_2 = angles[i];
-				if (i == 3)
-					Actual_angle_3 = angles[i];
-			}
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
 
 			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
 		}
 
@@ -105,22 +95,17 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
-			float Expected_angle_1 = 0;
-			float Expected_angle_2 = 0;
-			float Expected_angle_3 = 0;
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
 
-			for (int i = 0; i < 3; i++) {
-				if (i == 1)
-					Actual_angle_1 = angles[i];
-				if (i == 2)
-					Actual_angle_2 = angles[i];
-				if (i == 3)
-					Actual_angle_3 = angles[i];
-			}
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
 
 			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
 		}
 
@@ -129,22 +114,17 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
-			float Expected_angle_1 = 0;
-			float Expected_angle_2 = 0;
-			float Expected_angle_3 = 0;
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
 
-			for (int i = 0; i < 3; i++) {
-				if (i == 1)
-					Actual_angle_1 = angles[i];
-				if (i == 2)
-					Actual_angle_2 = angles[i];
-				if (i == 3)
-					Actual_angle_3 = angles[i];
-			}
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
 
 			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
 		}
 
@@ -153,22 +133,17 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
-			float Expected_angle_1 = 0;
-			float Expected_angle_2 = 0;
-			float Expected_angle_3 = 0;
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
 
-			for (int i = 0; i < 3; i++) {
-				if (i == 1)
-					Actual_angle_1 = angles[i];
-				if (i == 2)
-					Actual_angle_2 = angles[i];
-				if (i == 3)
-					Actual_angle_3 = angles[i];
-			}
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
 
 			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
 		}
 
@@ -177,22 +152,17 @@ namespace unittesting
 			float angles[3];
 			getAngles(0, 0, 0, angles);
 
-			float Expected_angle_1 = 0;
-			float Expected_angle_2 = 0;
-			float Expected_angle_3 = 0;
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
 
-			for (int i = 0; i < 3; i++) {
-				if (i == 1)
-					Actual_angle_1 = angles[i];
-				if (i == 2)
-					Actual_angle_2 = angles[i];
-				if (i == 3)
-					Actual_angle_3 = angles[i];
-			}
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
 
 			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
-			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
 		}
 	};
