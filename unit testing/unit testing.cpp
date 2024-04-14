@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-extern "C" void getAngles(float a, float b, float c);
+extern "C" void getAngles(float a, float b, float c, float arr[]);
 extern "C" char* analyzeTriangle(int side1, int side2, int side3);
 extern "C" void rectangleCalculator(struct Point* rect);
 
@@ -61,7 +61,7 @@ namespace unittesting
 		TEST_METHOD(TriangleInsideAngle2) {
 			float angle_1, angle_2, angle_3;
 			float angles[3];
-
+			
 		}
 
 		TEST_METHOD(TriangleInsideAngle3) {
