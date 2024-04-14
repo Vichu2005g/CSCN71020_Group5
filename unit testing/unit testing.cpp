@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-extern "C" void getAngles(float a, float b, float c);
+extern "C" void getAngles(float a, float b, float c, float arr[]);
 extern "C" char* analyzeTriangle(int side1, int side2, int side3);
 extern "C" void rectangleCalculator(struct Point* rect);
 
@@ -49,7 +49,120 @@ namespace unittesting
 			char* expected = "Not a triangle";
 			Assert::AreEqual(expected, actual);
 
+		}
 		// Unit testing for Triangle inside angle
+
+		TEST_METHOD(TriangleInsideAngle1) {
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			float angles[3];
+			getAngles(0, 0, 0, angles);
+
+			const float Expected_angle_1 = 60;
+			const float Expected_angle_2 = 60;
+			const float Expected_angle_3 = 60;
+
+			Actual_angle_1 = angles[0], 
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
+			
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle2) {
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			float angles[3];
+			getAngles(0, 0, 0, angles);
+
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
+
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle3) {
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			float angles[3];
+			getAngles(0, 0, 0, angles);
+
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
+
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle4) {
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			float angles[3];
+			getAngles(0, 0, 0, angles);
+
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
+
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle5) {
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			float angles[3];
+			getAngles(0, 0, 0, angles);
+
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
+
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle6) {
+			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			float angles[3];
+			getAngles(0, 0, 0, angles);
+
+			const float Expected_angle_1 = 0;
+			const float Expected_angle_2 = 0;
+			const float Expected_angle_3 = 0;
+
+			Actual_angle_1 = angles[0];
+			Actual_angle_2 = angles[1];
+			Actual_angle_3 = angles[2];
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
 		}
 	};
