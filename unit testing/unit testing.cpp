@@ -70,6 +70,9 @@ namespace unittesting
 					Actual_angle_3 = angles[i];
 			}
 			
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
 
 		}
 
@@ -90,7 +93,11 @@ namespace unittesting
 				if (i == 3)
 					Actual_angle_3 = angles[i];
 			}
-			
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+
 		}
 
 		TEST_METHOD(TriangleInsideAngle3) {
@@ -110,6 +117,10 @@ namespace unittesting
 				if (i == 3)
 					Actual_angle_3 = angles[i];
 			}
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
 
 		}
 
@@ -131,6 +142,10 @@ namespace unittesting
 					Actual_angle_3 = angles[i];
 			}
 
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+
 		}
 
 		TEST_METHOD(TriangleInsideAngle5) {
@@ -151,6 +166,10 @@ namespace unittesting
 					Actual_angle_3 = angles[i];
 			}
 
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
+
 		}
 
 		TEST_METHOD(TriangleInsideAngle6) {
@@ -170,6 +189,10 @@ namespace unittesting
 				if (i == 3)
 					Actual_angle_3 = angles[i];
 			}
+
+			Assert::AreEqual(Expected_angle_1, Actual_angle_1);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_2);
+			Assert::AreEqual(Expected_angle_1, Actual_angle_3);
 
 		}
 	};
