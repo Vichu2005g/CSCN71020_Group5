@@ -49,7 +49,42 @@ namespace unittesting
 			char* expected = "Not a triangle";
 			Assert::AreEqual(expected, actual);
 
+		}
 		// Unit testing for Triangle inside angle
+
+		TEST_METHOD(TriangleInsideAngle1) {
+			float angle_1, angle_2, angle_3;
+			float angles[3];
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle2) {
+			float angle_1, angle_2, angle_3;
+			float angles[3];
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle3) {
+			float angle_1, angle_2, angle_3;
+			float angles[3];
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle4) {
+			float angle_1, angle_2, angle_3;
+			float angles[3];
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle5) {
+			float angle_1, angle_2, angle_3;
+			float angles[3];
+
+		}
+
+		TEST_METHOD(TriangleInsideAngle6) {
+			float angle_1, angle_2, angle_3;
+			float angles[3];
 
 		}
 	};
