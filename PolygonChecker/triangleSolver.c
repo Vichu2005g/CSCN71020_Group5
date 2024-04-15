@@ -37,25 +37,25 @@ char* analyzeTriangle(int side1, int side2, int side3) {
 	else if (side1 == side2 && side1 == side3) {
 		getAngles(side1, side2, side3, angles);
 		for (int i = 0; i < 3; i++)
-			printf(" %f", angles[i]);
+			printf("angle %i: %f \n", i + 1, angles[i]);
 
-		result = "Equilateral triangle";
+		result = "\nEquilateral triangle";
 	}
 	else if ((side1 == side2 && side1 != side3) || 
 		(side1 == side3 && side1 != side2))
 	{
 		getAngles(side1, side2, side3, angles);
 		for (int i = 0; i < 3; i++)
-			printf(" %f", angles[i]);
+			printf("%f ", angles[i]);;
 
-		result = "Isosceles triangle";
+		result = "\nIsosceles triangle";
 	}
 	else {
 		getAngles(side1, side2, side3, angles);
 		for (int i = 0; i < 3; i++)
-			printf(" %f", angles[i]);
+			printf("%f ", angles[i]);
 
-		result = "Scalene triangle";
+		result = "\nScalene triangle";
 	}
 
 	return result;
