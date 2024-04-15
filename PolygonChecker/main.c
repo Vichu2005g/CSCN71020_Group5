@@ -6,7 +6,6 @@
 #include "triangleSolver.h"
 #include "rectangleSolver.h"
 
-int side = 0;
 
 int main() {
 	bool continueProgram = true;
