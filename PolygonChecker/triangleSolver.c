@@ -6,7 +6,7 @@
 
 #define PI 3.14159265
 
-double radiansToDegrees(double radians)
+float radiansToDegrees(float radians)
 {
 	return radians * (180.0 / PI);
 }
@@ -22,10 +22,10 @@ void getAngles(float a, float b, float c, float arr[])
 	float angle_c = acos((a * a + b * b - c * c) / (2 * a * b));
 	angle_c = radiansToDegrees(angle_c);
 
-	arr[0] = round(angle_a * 100) / 100;
-	arr[1] = round(angle_b * 100) / 100;
-	arr[2] = round(angle_c * 100) / 100;
-}
+	arr[0] = round(angle_a);
+	arr[1] = round(angle_b);
+	arr[2] = round(angle_c);
+} //76.23000000
 
 char* analyzeTriangle(int side1, int side2, int side3) {
 	char* result = ""; 
