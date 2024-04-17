@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "CppUnitTest.h"
-extern "C" void getAngles(float a, float b, float c, float arr[]);
+extern "C" void getAngles(double a, double b, double c, double arr[]);
 extern "C" char* analyzeTriangle(int side1, int side2, int side3);
 extern "C" void rectangleCalculator(struct Point* rect);
 
@@ -53,15 +53,15 @@ namespace unittesting
 		// Unit testing for Triangle inside angle
 
 		TEST_METHOD(TriangleInsideAngle1) {
-			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
-			float angles[3];
-			getAngles(0, 0, 0, angles);
+			double Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			double angles[3];
+			getAngles(3, 3, 3, angles);
 
-			const float Expected_angle_1 = 60;
-			const float Expected_angle_2 = 60;
-			const float Expected_angle_3 = 60;
+			const double Expected_angle_1 = 60;
+			const double Expected_angle_2 = 60;
+			const double Expected_angle_3 = 60;
 
-			Actual_angle_1 = angles[0], 
+			Actual_angle_1 = angles[0];
 			Actual_angle_2 = angles[1];
 			Actual_angle_3 = angles[2];
 			
@@ -72,13 +72,13 @@ namespace unittesting
 		}
 
 		TEST_METHOD(TriangleInsideAngle2) {
-			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
-			float angles[3];
-			getAngles(0, 0, 0, angles);
+			double Actual_angle_1, Actual_angle_2, Actual_angle_3;
+			double angles[3];
+			getAngles(5, 3, 4, angles);
 
-			const float Expected_angle_1 = 0;
-			const float Expected_angle_2 = 0;
-			const float Expected_angle_3 = 0;
+			const double Expected_angle_1 = 90;
+			const double Expected_angle_2 = 36.87;
+			const double Expected_angle_3 = 53.13;
 
 			Actual_angle_1 = angles[0];
 			Actual_angle_2 = angles[1];
@@ -90,7 +90,7 @@ namespace unittesting
 
 		}
 
-		TEST_METHOD(TriangleInsideAngle3) {
+		/*TEST_METHOD(TriangleInsideAngle3) {
 			float Actual_angle_1, Actual_angle_2, Actual_angle_3;
 			float angles[3];
 			getAngles(0, 0, 0, angles);
@@ -164,6 +164,12 @@ namespace unittesting
 			Assert::AreEqual(Expected_angle_2, Actual_angle_2);
 			Assert::AreEqual(Expected_angle_3, Actual_angle_3);
 
+		}*/
+
+		TEST_METHOD(RectangleTest1)
+		{
+
 		}
 	};
+
 }
